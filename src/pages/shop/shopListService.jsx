@@ -296,7 +296,7 @@ export default class extends React.Component {
                               >
                                 {item.root.Title}
                               </div>
-                              {item.root.Desc !== "" || item.root.Detail ? (
+                              {/* {item.root.Desc !== "" || item.root.Detail ? (
                                 <div className="service-about__content">
                                   <div className="service-about__content-text">
                                     {ReactHtmlParser(item.root.Desc)}
@@ -347,7 +347,7 @@ export default class extends React.Component {
                                 </div>
                               ) : (
                                 ""
-                              )}
+                              )} */}
                               <ShopListServiceItem
                                 item={item}
                               />

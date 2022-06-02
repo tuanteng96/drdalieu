@@ -21,7 +21,7 @@ class ShopDataService {
         return http.get(`/api/v3/prod?cmd=getid&id=${id}&mid=${userId}&token=${getToken()}`);
     }
     getServiceParent(id, stock, pi, ps, ignorepublic, original) {
-            return http.get(`/api/v3/app2?get=sv&cid=${id}&token=${getToken()}&stockid=${stock}&takes=Detail,Desc&pi=${pi}&ps=${ps}${ignorepublic ? `&ignorepublic=${ignorepublic}` : ""}${original? `&rootIds=${original}` : ""}`);
+            return http.get(`/api/v3/app2?get=sv&cid=${id}&token=${getToken()}&stockid=${stock}&takes=&pi=${pi}&ps=${ps}${ignorepublic ? `&ignorepublic=${ignorepublic}` : ""}${original? `&rootIds=${original}` : ""}`);
     }
     getServiceParentID(id, stockid) {
         return http.get(`/app/index.aspx?cmd=service_parentid&token=${getToken()}&id=${id}&stockid=${stockid}`);
