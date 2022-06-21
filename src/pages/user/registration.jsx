@@ -101,7 +101,7 @@ export default class extends React.Component {
           <div className="page-login__content">
             <div className="page-login__logo">
               <div className="logo">
-                <img className="logo-reg" src={SERVER_APP + "/app/images/logo-app.png"} />
+                <img className="logo-reg" src={SERVER_APP + "/app/images/logo-app.png?1"} />
               </div>
               <div className="title">
                 Xin chào, Bắt đầu tạo tài khoản nào
