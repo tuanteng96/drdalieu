@@ -43,7 +43,7 @@ export default class quickAction extends React.Component {
     const { mess, phone, isOpen } = this.state;
     if (!mess || !phone) return "";
     return (
-      <div className={`page-quick ${isOpen ? "open" : ""}`}>
+      <div className={`page-quick open ${isOpen ? "open" : ""}`} style={{width: `50px`}}>
         <div className="page-quick-list">
           {phone && (
             <div
@@ -61,7 +61,7 @@ export default class quickAction extends React.Component {
                 </Link>
               ) : (
                 <div
-                  className="item mess"
+                  className="item mess mb-0"
                   onClick={() => this.handleLink(mess)}
                 >
                   <FaFacebookMessenger />
@@ -70,12 +70,12 @@ export default class quickAction extends React.Component {
             </>
           )}
         </div>
-        <div className="btn-quick" onClick={this.onOpen}>
+        {/* <div className="btn-quick" onClick={this.onOpen}>
           <div className="btn-quick-trans">
             <i className="las la-headset headset"></i>
             <i className="las la-times times"></i>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
